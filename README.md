@@ -18,33 +18,25 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** sobre o merca
 
 ## 📁 Estrutura do Projeto
 
-```
 projeto-analise-mercado-tech/
 │
-├── README.md                          ← Este arquivo
+├── README.md
+├── requirements.txt
+├── analise_mercado_tech_2024_2026.xlsx
+│
 ├── data/
-│   └── vagas_tech_brasil_2024_2026.csv  ← Dataset com 2.000 vagas
+│ └── vagas_tech_brasil_2024_2026.csv
 │
 ├── scripts/
-│   ├── 01_gerar_dados.py              ← Geração do dataset sintético
-│   ├── 02_analise_exploratoria.py     ← Análise + visualizações
-│   └── 03_gerar_excel.py             ← Dashboard Excel formatado
+│ ├── 01_gerar_dados.py
+│ ├── 02_analise_exploratoria.py
+│ └── 03_gerar_excel.py
 │
-├── visualizations/
-│   ├── 01_vagas_por_cargo.png
-│   ├── 02_salario_cargo_senioridade.png
-│   ├── 03_evolucao_trimestral.png
-│   ├── 04_modalidade_trabalho.png
-│   ├── 05_habilidades_demandadas.png
-│   ├── 06_distribuicao_salarial.png
-│   ├── 07_heatmap_estado_cargo.png
-│   ├── 08_competicao_por_vaga.png
-│   ├── 09_ingles_por_senioridade.png
-│   └── 10_salario_por_setor.png
-│
-└── output/
-    └── analise_mercado_tech_2024_2026.xlsx  ← Dashboard Excel completo
-```
+└── visualizations/ (imagens também disponíveis na raiz)
+├── 01_vagas_por_cargo.png
+├── 02_salario_cargo_senioridade.png
+├── ...
+└── 10_salario_por_setor.png
 
 ---
 
@@ -120,27 +112,34 @@ Workbook profissional com **6 abas**:
 - Tempo médio para fechar uma posição: ~30 dias
 
 ---
-## 📈 Principais Visualizações
 
-### Distribuição Salarial por Cargo
-![Distribuição salarial por cargo](visualizations/salario_por_cargo.png)
+## 📊 Principais Visualizações
 
-### Top 10 Habilidades Mais Demandadas
-![Habilidades mais demandadas](visualizations/top_habilidades.png)
+### Distribuição de Vagas por Cargo
+![Distribuição de vagas por cargo](01_vagas_por_cargo.png)
 
-### Evolução de Vagas por Ano
-![Tendência temporal](visualizations/tendencia_temporal.png)
+### Salário por Cargo e Senioridade
+![Salário por cargo e senioridade](02_salario_cargo_senioridade.png)
+
+### Evolução Trimestral de Vagas
+![Evolução trimestral](03_evolucao_trimestral.png)
+
+### Modalidade de Trabalho
+![Modalidade de trabalho](04_modalidade_trabalho.png)
+
+### Top Habilidades Demandadas
+![Habilidades demandadas](05_habilidades_demandadas.png)
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Uso |
-|---|---|
-| **Python 3.x** | Linguagem principal |
-| **pandas** | Manipulação e análise de dados |
-| **NumPy** | Computação numérica e geração de dados |
-| **matplotlib** | Criação de visualizações |
-| **seaborn** | Visualizações estatísticas complementares |
-| **openpyxl** | Geração do dashboard Excel |
+- **Python 3.x** — Linguagem principal
+- **pandas** — Manipulação e análise de dados
+- **NumPy** — Computação numérica e geração de dados
+- **matplotlib** — Criação de visualizações
+- **seaborn** — Visualizações estatísticas complementares
+- **openpyxl** — Geração do dashboard Excel
 
 ---
 
@@ -148,11 +147,11 @@ Workbook profissional com **6 abas**:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/analise-mercado-tech.git
-cd analise-mercado-tech
+git clone https://github.com/kaizdanilo-ship-it/projeto_analise_de_mercado_tech.git
+cd projeto_analise_de_mercado_tech
 
 # 2. Instale as dependências
-pip install pandas numpy matplotlib seaborn openpyxl
+pip install -r requirements.txt
 
 # 3. Gere o dataset
 cd scripts
@@ -163,28 +162,17 @@ python 02_analise_exploratoria.py
 
 # 5. Gere o dashboard Excel
 python 03_gerar_excel.py
-```
+💡 Habilidades Demonstradas
+Coleta e modelagem de dados — criação de datasets sintéticos com distribuições realistas
+Limpeza e transformação — tratamento de dados categóricos, numéricos e textuais
+Análise exploratória (EDA) — estatísticas descritivas, correlações, segmentações
+Visualização de dados — gráficos profissionais com paleta acessível e tipografia limpa
+Storytelling com dados — transformar números em insights acionáveis
+Automação — pipeline reprodutível de dados → análise → output
+Excel avançado — dashboards formatados profissionalmente com openpyxl
 
----
 
-## 💡 Habilidades Demonstradas
-
-Este projeto demonstra domínio em:
-
-- **Coleta e modelagem de dados** — criação de datasets sintéticos com distribuições realistas
-- **Limpeza e transformação** — tratamento de dados categóricos, numéricos e textuais
-- **Análise exploratória (EDA)** — estatísticas descritivas, correlações, segmentações
-- **Visualização de dados** — gráficos profissionais com paleta acessível e tipografia limpa
-- **Storytelling com dados** — transformar números em insights acionáveis
-- **Automação** — pipeline reprodutível de dados → análise → output
-- **Excel avançado** — dashboards formatados profissionalmente com openpyxl
-
----
-
-## 📝 Licença
-
+📝 Licença
 Este projeto é de uso livre para fins de estudo e portfólio.
 
----
-
-*Projeto desenvolvido como portfólio de Data Analytics — Danilo Santos, 2026*
+Projeto desenvolvido como portfólio de Data Analytics — Danilo Santos, 2026
