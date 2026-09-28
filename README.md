@@ -18,25 +18,16 @@ Este projeto realiza uma **análise exploratória de dados (EDA)** sobre o merca
 
 ## 📁 Estrutura do Projeto
 
-projeto-analise-mercado-tech/
-│
-├── README.md
-├── requirements.txt
-├── analise_mercado_tech_2024_2026.xlsx
-│
-├── data/
-│ └── vagas_tech_brasil_2024_2026.csv
-│
-├── scripts/
-│ ├── 01_gerar_dados.py
-│ ├── 02_analise_exploratoria.py
-│ └── 03_gerar_excel.py
-│
-└── visualizations/ (imagens também disponíveis na raiz)
-├── 01_vagas_por_cargo.png
-├── 02_salario_cargo_senioridade.png
-├── ...
-└── 10_salario_por_setor.png
+| Pasta/Arquivo | Descrição |
+|---|---|
+| `README.md` | Este arquivo |
+| `requirements.txt` | Dependências do projeto |
+| `data/vagas_tech_brasil_2024_2026.csv` | Dataset com 2.000 vagas |
+| `scripts/01_gerar_dados.py` | Geração do dataset sintético |
+| `scripts/02_analise_exploratoria.py` | Análise + visualizações |
+| `scripts/03_gerar_excel.py` | Dashboard Excel formatado |
+| `visualizations/` | 10 gráficos em PNG |
+| `analise_mercado_tech_2024_2026.xlsx` | Dashboard Excel completo |
 
 ---
 
