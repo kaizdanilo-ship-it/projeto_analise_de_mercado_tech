@@ -120,6 +120,16 @@ Workbook profissional com **6 abas**:
 - Tempo médio para fechar uma posição: ~30 dias
 
 ---
+## 📈 Principais Visualizações
+
+### Distribuição Salarial por Cargo
+![Distribuição salarial por cargo](visualizations/salario_por_cargo.png)
+
+### Top 10 Habilidades Mais Demandadas
+![Habilidades mais demandadas](visualizations/top_habilidades.png)
+
+### Evolução de Vagas por Ano
+![Tendência temporal](visualizations/tendencia_temporal.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
